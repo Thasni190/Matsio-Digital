@@ -1,211 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Demo Site </title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+  
+</head>
+<body>
+    <div class="top-bar">
+        <div class="container top-bar-content">
+            <div class="contact-info">
+                <div class="contact-item border-right">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+1 (123) 456-7890</span>
+                </div>
+                <div class="contact-item border-right">
+                    <i class="fas fa-envelope"></i>
+                    <span>info@example.com</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Mon-Thu: 8:00 AM - 9:00 PM</span>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link">
+                <i class="fa-brands fa-facebook text-xl"></i>
 
-    <style>
-      .hero-section {
-        background-image: url('https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
-        background-size: cover;
-        background-position: center;
-        position: relative;
-      }
-
-      .hero-section::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: rgba(0, 0, 0, 0.5);
-        backdrop-filter: blur(5px);
-      }
-
-      .content-wrapper {
-        position: relative;
-      }
-    </style>
-  </head>
-
-  <body>
-    <div class="bg-[#143454] text-white px-4 py-2">
-      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between text-sm">
-        <div class="flex flex-wrap justify-center md:justify-start gap-4">
-          <div class="flex items-center border-r border-gray-400 pr-4">
-            <i class="fas fa-phone-alt text-[#5db8b4] mr-2"></i>
-            <span>+1 (123) 456-7890</span>
-          </div>
-          <div class="flex items-center border-r border-gray-400 pr-4">
-            <i class="fas fa-envelope text-[#5db8b4] mr-2"></i>
-            <span>info@example.com</span>
-          </div>
-          <div class="flex items-center">
-            <i class="fas fa-clock text-[#5db8b4] mr-2"></i>
-            <span>Mon-Thu: 8:00 AM - 9:00 PM</span>
-          </div>
+                </a>
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
         </div>
-
-        <div class="flex mt-2 md:mt-0 space-x-3">
-          <a href="#" class="w-8 h-8 rounded-full flex items-center justify-center">
-            <i class="fa-brands fa-facebook text-xl"></i>
-          </a>
-          <a href="#" class="w-8 h-8 rounded-full flex items-center justify-center">
-            <i class="fa-brands fa-twitter text-xl"></i>
-          </a>
-          <a href="#" class="w-8 h-8 rounded-full flex items-center justify-center">
-            <i class="fa-brands fa-linkedin-in text-xl"></i>
-          </a>
-        </div>
-      </div>
     </div>
 
-    <nav class="bg-white shadow-md">
-      <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        <div class="flex items-center space-x-2">
-          <img
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+  <img
             src="https://www.shutterstock.com/shutterstock/photos/2218784789/display_1500/stock-vector-auto-payment-auto-pay-icon-editable-file-vector-illustration-2218784789.jpg"
             alt="Company Logo"
-            class="h-10 w-10 object-cover"
-          />
+          />            </div>
+            <div class="nav-links">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Services</a>
+                <a href="#" class="nav-link">About Us</a>
+                <a href="#" class="nav-link">Order Company</a>
+                <a href="#" class="nav-link">Apply for Tax Rebate</a>
+                <a href="#" class="nav-link">Blog</a>
+                <a href="#" class="nav-link">Contact</a>
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
-
-        <div class="hidden md:flex space-x-6">
-          <a href="#" class="text-gray-800 hover:text-blue-600 font-medium">Home</a>
-          <a href="#" class="text-gray-800 hover:text-blue-600 font-medium">Services</a>
-          <a href="#" class="text-gray-800 hover:text-blue-600 font-medium">About Us</a>
-          <a href="#" class="text-gray-800 hover:text-blue-600 font-medium">Order Company</a>
-          <a href="#" class="text-gray-800 hover:text-blue-600 font-medium">Apply for Tax Rebate</a>
-          <a href="#" class="text-gray-800 hover:text-blue-600 font-medium">Blog</a>
-          <a href="#" class="text-gray-800 hover:text-blue-600 font-medium">Contact</a>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">Services</a>
+            <a href="#" class="nav-link">About Us</a>
+            <a href="#" class="nav-link">Order Company</a>
+            <a href="#" class="nav-link">Apply for Tax Rebate</a>
+            <a href="#" class="nav-link">Blog</a>
+            <a href="#" class="nav-link">Contact</a>
         </div>
-
-        <div class="md:hidden">
-          <button id="mobile-menu-button" class="text-gray-800 text-2xl">
-            <i class="fas fa-bars"></i>
-          </button>
-        </div>
-      </div>
-
-      <div id="mobile-menu" class="hidden md:hidden bg-white px-4 pb-4">
-        <a href="#" class="block py-2 text-gray-800 hover:text-blue-600">Home</a>
-        <a href="#" class="block py-2 text-gray-800 hover:text-blue-600">Services</a>
-        <a href="#" class="block py-2 text-gray-800 hover:text-blue-600">About Us</a>
-        <a href="#" class="block py-2 text-gray-800 hover:text-blue-600">Order Company</a>
-        <a href="#" class="block py-2 text-gray-800 hover:text-blue-600">Apply for Tax Rebate</a>
-        <a href="#" class="block py-2 text-gray-800 hover:text-blue-600">Blog</a>
-        <a href="#" class="block py-2 text-gray-800 hover:text-blue-600">Contact</a>
-      </div>
     </nav>
 
-    <section class="hero-section py-16 md:py-24 text-white">
-      <div class="container mx-auto px-4 content-wrapper">
-        <div class="flex flex-col lg:flex-row gap-12 items-center">
-          <div class="lg:w-1/2 z-10" data-aos="fade-right">
-            <h1 class="text-3xl md:text-5xl font-bold mb-6">
-              Take The Right Step<br />For Your Business
-            </h1>
-            <p class="text-lg mb-8 leading-relaxed">
-              Tax Associate is a leading consultancy firm that provides<br />
-              simple, effective company registration, and accounting <br />
-              solutions to enterprises in Ireland.
-            </p>
-            <div class="flex flex-col sm:flex-row gap-4">
-              <button class="bg-[#5db8b4] hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">
-                Get Started
-              </button>
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Take The Right Step<br>For Your Business</h1>
+                <p class="hero-description">
+                    Tax Associate is a leading consultancy firm that provides<br>
+                    simple, effective company registration, and accounting<br>
+                    solutions to enterprises in Ireland.
+                </p>
+                <button class="hero-btn">Get Started</button>
             </div>
-          </div>
-
-          <div class="lg:w-1/2 z-10" data-aos="fade-left">
-            <div class="bg-white rounded-xl shadow-xl p-3 sm:p-8 text-gray-800 w-full max-w-md mx-auto">
-              <h2 class="text-2xl sm:text-2xl font-bold text-[#143454] text-center mb-6 p-2 rounded">
-                Apply For Tax Rebate Now
-              </h2>
-              <form class="space-y-5">
-                <div>
-                  <label for="name" class="block text-gray-700 mb-1">Name</label>
-                  <input id="name" type="text" class="w-full px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-[#5db8b4]" />
+            <div class="hero-form-container">
+                <div class="form-card">
+                    <h2 class="form-title">Apply For Tax Rebate Now</h2>
+                    <form class="form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email ID</label>
+                            <input type="email" id="email" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="pps" class="form-label">PPS Number</label>
+                            <input type="text" id="pps" class="form-input">
+                        </div>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="terms" class="checkbox">
+                            <label for="terms" class="terms-text">
+                                I have read & agreed to the authorisation<br>
+                                and the <a href="#" class="terms-link">terms & conditions</a>.
+                            </label>
+                        </div>
+                        <button type="submit" class="form-submit">
+                            Apply <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
                 </div>
-                <div>
-                  <label for="email" class="block text-gray-700 mb-1">Email ID</label>
-                  <input id="email" type="email" class="w-full px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-[#5db8b4]" />
-                </div>
-                <div>
-                  <label for="pps" class="block text-gray-700 mb-1">PPS Number</label>
-                  <input id="pps" type="text" class="w-full px-4 py-2 border border-gray-300 rounded-full focus:outline-none focus:ring-2 focus:ring-[#5db8b4]" />
-                </div>
-                <div class="flex items-start">
-                  <input id="terms" type="checkbox" class="mt-1 w-4 h-4 text-[#143454] border-gray-300 rounded focus:ring-[#5db8b4]" />
-                  <label for="terms" class="ml-2 text-sm text-gray-700">
-                    I have read & agreed to the authorisation <br />
-                    and the <a href="#" class="text-[#5db8b4] underline">terms & conditions</a>.
-                  </label>
-                </div>
-                <button type="submit" class="bg-[#143454] hover:bg-[#0f2e48] text-white font-semibold py-2 px-4 rounded-full transition duration-300 flex items-center justify-center">
-                  Apply <i class="fas fa-arrow-right ml-2"></i>
-                </button>
-              </form>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <footer class="bg-[#f1fafa] py-12">
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col md:flex-row justify-between items-start gap-10 text-center md:text-left">
-          <div class="flex-1" data-aos="zoom-in" data-aos-delay="100">
-            <div class="flex justify-center md:justify-start mb-4">
-              <div class="bg-[#5db8b4] text-white w-12 h-12 rounded-full flex items-center justify-center text-xl">
-                <i class="fas fa-file-alt"></i>
-              </div>
+    <footer class="features">
+        <div class="container features-container">
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-file-alt"></i>
+                </div>
+                <h3 class="feature-title">Start Up Services</h3>
+                <p class="feature-description">
+                    We support entrepreneurs to build their businesses by providing them with the ideal company formation legal services.
+                </p>
             </div>
-            <h3 class="text-[#143454] font-semibold text-lg mb-2">Start Up Services</h3>
-            <p class="text-gray-700 text-sm">We support entrepreneurs to build their businesses by providing them with the ideal company formation legal services.</p>
-          </div>
-
-          <div class="flex-1" data-aos="zoom-in" data-aos-delay="300">
-            <div class="flex justify-center md:justify-start mb-4">
-              <div class="bg-[#5db8b4] text-white w-12 h-12 rounded-full flex items-center justify-center text-xl">
-                <i class="fas fa-people-group"></i>
-              </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-people-group"></i>
+                </div>
+                <h3 class="feature-title">Finance & Accounting</h3>
+                <p class="feature-description">
+                    We provide our clients with the best in the market, accounting, and financial services to help accelerate their business growth.
+                </p>
             </div>
-            <h3 class="text-[#143454] font-semibold text-lg mb-2">Finance & Accounting</h3>
-            <p class="text-gray-700 text-sm">We provide our clients with the best in the market, accounting, and financial services to help accelerate their business growth.</p>
-          </div>
-
-          <div class="flex-1" data-aos="zoom-in" data-aos-delay="500">
-            <div class="flex justify-center md:justify-start mb-4">
-              <div class="bg-[#5db8b4] text-white w-12 h-12 rounded-full flex items-center justify-center text-xl">
-                <i class="fas fa-shield-alt"></i>
-              </div>
+            <div class="feature-card">
+                <div class="feature-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="feature-title">Risk & Assurance</h3>
+                <p class="feature-description">
+                    We offer risk and assurance services for new as well as established businesses to help them reduce risks and overcome any disruption.
+                </p>
             </div>
-            <h3 class="text-[#143454] font-semibold text-lg mb-2">Risk & Assurance</h3>
-            <p class="text-gray-700 text-sm">We offer risk and assurance services for new as well as established businesses to help them reduce risks and overcome any disruption.</p>
-          </div>
         </div>
-      </div>
     </footer>
 
-    <script>
-      document.getElementById("mobile-menu-button").addEventListener("click", function () {
-        const menu = document.getElementById("mobile-menu");
-        menu.classList.toggle("hidden");
-      });
-    </script>
 
-    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-  </body>
+</body>
+<script src="index.js"></script>
 </html>
